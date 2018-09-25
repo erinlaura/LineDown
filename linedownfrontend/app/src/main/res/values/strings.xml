@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LineDown</string>
+    <string name="nearbyRestaurants_title">Nearby Restaurants</string>
+    <string name="distance_placemarker">TBD</string>
+    <string name="col1main">Restaurant</string>
+    <string name="col2main">Wait</string>
+    <string name="col3main">Distance</string>
+    <string name="detail_header">Detail View</string>
+    <string name="add_wait">Add Wait Time</string>
+</resources>

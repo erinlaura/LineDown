@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.engi5895.linedown.linedown.WaitMethodSelect"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/startPicker_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/finishPicker_label"
+            android:layout_marginTop="10dp"
+            android:text="Pick start time"
+            android:textSize="24dp" />
+
+        <TimePicker
+            android:id="@+id/startPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startPicker_label"
+            android:layout_centerHorizontal="true"
+            android:timePickerMode="spinner"
+            app:layout_constraintBottom_toTopOf="@+id/finishPicker"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/finishPicker_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Pick finish time"
+            android:textSize="24dp" />
+
+        <TimePicker
+            android:id="@+id/finishPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/startPicker"
+            android:layout_below="@+id/finishPicker_label"
+            android:timePickerMode="spinner"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/submit_button_manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="  Submit  "
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:background="@drawable/mybutton"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

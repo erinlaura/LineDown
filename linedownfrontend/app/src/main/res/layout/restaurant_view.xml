@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.engi5895.linedown.linedown.MainActivity">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.engi5895.linedown.linedown.MainActivity">
+
+        <!--<ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/candy_coded" />-->
+
+
+        <TextView
+            android:id="@+id/restaurant_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/activity_padding"
+            android:text="@string/detail_header"
+            android:textSize="@dimen/title_size"
+            android:textColor="@color/bright_foreground_holo_dark"/>
+
+        <TextView
+            android:id="@+id/restaurant_waittime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/restaurant_name"
+            android:gravity="left"
+            android:textSize="18sp"
+            android:padding="20dp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/restaurant_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_below="@+id/restaurant_waittime"
+            android:textSize="18sp"
+            android:padding="20dp"
+            android:text="@string/distance_placemarker"
+            android:textColor="#FFFFFF"/>
+
+
+
+        <!--<com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/restaurant_address"
+            android:background="#00000000"
+            android:clickable="true"
+            map:uiCompass="true" />-->
+        <!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.mapwithmarker.MapsMarkerActivity" />-->
+
+        <Button
+            android:id="@+id/add_wait_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginBottom="17dp"
+            android:layout_marginEnd="17dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/add_wait"
+            android:visibility="visible"
+            android:textSize="24sp"
+            android:background="@drawable/mybutton"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

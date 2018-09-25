@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+    <display-name>Get Wait Time</display-name>
+    <description>
+	For retrieving the current estimated wait time for a 
+	given location supplied by parameter ID.
+    </description>
+
+    <servlet>
+        <servlet-name>GetWaitTimeServlet</servlet-name>
+        <servlet-class>com.linedown.backend.GetWaitTimeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetWaitTimeServlet</servlet-name>
+        <url-pattern>/getwaittime</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>InputWaitTimeServlet</servlet-name>
+        <servlet-class>com.linedown.backend.InputWaitTimeServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>InputWaitTimeServlet</servlet-name>
+        <url-pattern>/inputwaittime</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>UpdateUserLocationServlet</servlet-name>
+        <servlet-class>com.linedown.backend.UpdateUserLocationServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>UpdateUserLocationServlet</servlet-name>
+        <url-pattern>/updateuserlocation</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateBaseDataSetServlet</servlet-name>
+        <servlet-class>com.linedown.backend.UpdateBaseDataSetServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UpdateBaseDataSetServlet</servlet-name>
+        <url-pattern>/updatebasedataset</url-pattern>
+    </servlet-mapping>
+
+</web-app>
