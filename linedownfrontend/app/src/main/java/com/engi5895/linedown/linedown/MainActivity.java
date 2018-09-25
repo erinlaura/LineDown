@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     private List<String> nearbyRestaurants = new ArrayList<>();
     private static BusinessAdapter nearbyRestaurantAdapter;
     //private ArrayAdapter adapter;
-    public static final String API_key = "AIzaSyC1gT1axMrmM2vniWX3jibLiq0Sv0fYBVc";
+    public static final String API_key = // insert your own API key (request from google)
     private static SearchView searchView;
     public static LatLng latLng = null;
 
